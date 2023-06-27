@@ -7,6 +7,7 @@ lazy val kafkaClients          = "org.apache.kafka"           % "kafka-clients" 
 lazy val scalaCollectionCompat = "org.scala-lang.modules"    %% "scala-collection-compat" % "2.11.0"
 lazy val jacksonDatabind       = "com.fasterxml.jackson.core" % "jackson-databind"        % "2.15.2"
 lazy val logback               = "ch.qos.logback"             % "logback-classic"         % "1.3.8"
+lazy val pubsublite = "com.google.cloud" % "pubsublite-kafka" % "1.1.2"
 
 enablePlugins(ZioSbtEcosystemPlugin, ZioSbtCiPlugin)
 
@@ -101,7 +102,8 @@ lazy val zioKafka =
       libraryDependencies ++= Seq(
         kafkaClients,
         jacksonDatabind,
-        scalaCollectionCompat
+        scalaCollectionCompat,
+        pubsublite
       )
     )
 
