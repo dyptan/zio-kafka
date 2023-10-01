@@ -1,4 +1,4 @@
-package zio.kafka.pubsublite.producer
+package zio.kafka.producer.pubsublite
 
 import com.google.cloud.pubsublite.kafka.{ ProducerSettings => GProducerSettings }
 import com.google.cloud.pubsublite.{ CloudZone, ProjectNumber, TopicName, TopicPath }
